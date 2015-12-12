@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QDo-wh-2qw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Shake-up Strains-->
+        <scene sceneID="udC-uI-JxB">
+            <objects>
+                <viewController id="oTk-Lg-Hhq" customClass="MainViewController" customModule="AnswerBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rXn-ae-RqQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="S9b-6t-nxY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y2m-SG-1Uj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MagicBall" translatesAutoresizingMaskIntoConstraints="NO" id="ao3-t9-toN">
+                                <rect key="frame" x="128" y="128" width="345" height="345"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqB-bJ-AIN">
+                                <rect key="frame" x="255" y="550" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="jn3-Cq-m52"/>
+                                </constraints>
+                                <state key="normal" title="Strain">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fortuneButtonTap:" destination="oTk-Lg-Hhq" eventType="touchUpInside" id="s6o-f1-i9Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGW-Qy-ebW">
+                                <rect key="frame" x="163" y="223" width="276" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="9YD-QA-HcR"/>
+                                    <constraint firstAttribute="height" constant="154" id="AZg-Vb-89r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16732433095535704" green="1" blue="0.64207759282692578" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OqB-bJ-AIN" firstAttribute="centerX" secondItem="ao3-t9-toN" secondAttribute="centerX" id="CbZ-9T-GfM"/>
+                            <constraint firstItem="oGW-Qy-ebW" firstAttribute="centerX" secondItem="Y2m-SG-1Uj" secondAttribute="centerX" id="Dq3-zb-W6T"/>
+                            <constraint firstItem="ao3-t9-toN" firstAttribute="centerX" secondItem="oGW-Qy-ebW" secondAttribute="centerX" id="NJa-4N-WXw"/>
+                            <constraint firstItem="OqB-bJ-AIN" firstAttribute="centerX" secondItem="Y2m-SG-1Uj" secondAttribute="centerX" id="RbQ-bp-Oah"/>
+                            <constraint firstItem="oGW-Qy-ebW" firstAttribute="centerY" secondItem="Y2m-SG-1Uj" secondAttribute="centerY" id="T3q-1W-tzo"/>
+                            <constraint firstItem="ao3-t9-toN" firstAttribute="centerY" secondItem="Y2m-SG-1Uj" secondAttribute="centerY" id="fg8-aZ-lUP"/>
+                            <constraint firstAttribute="bottom" secondItem="OqB-bJ-AIN" secondAttribute="bottom" constant="20" symbolic="YES" id="utg-es-bYQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shake-up Strains" id="qi1-Oj-j0g"/>
+                    <connections>
+                        <outlet property="fortuneLabel" destination="oGW-Qy-ebW" id="rdT-Eb-yN7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVF-VN-3x7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="698"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nqb-0X-VQI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QDo-wh-2qw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ac-kC-yLT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oTk-Lg-Hhq" kind="relationship" relationship="rootViewController" id="hdP-0l-Pgx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0C2-UB-n0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="698"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MagicBall" width="345" height="345"/>
+    </resources>
+</document>
