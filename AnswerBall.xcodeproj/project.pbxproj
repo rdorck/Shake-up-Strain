@@ -15,6 +15,7 @@
 		96258B091C1C85D200A06DF2 /* AnswerBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96258B081C1C85D200A06DF2 /* AnswerBallUITests.swift */; };
 		96258B171C1C86A800A06DF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96258B161C1C86A800A06DF2 /* MainViewController.swift */; };
 		96258B191C1C885800A06DF2 /* shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96258B181C1C885800A06DF2 /* shakesound.wav */; };
+		964CB3941C1CA26900E295DC /* StrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CB3931C1CA26900E295DC /* StrainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		96258B0A1C1C85D200A06DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96258B161C1C86A800A06DF2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		96258B181C1C885800A06DF2 /* shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shakesound.wav; sourceTree = "<group>"; };
+		964CB3931C1CA26900E295DC /* StrainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				96258AF11C1C85D200A06DF2 /* LaunchScreen.storyboard */,
 				96258AF41C1C85D200A06DF2 /* Info.plist */,
 				96258B161C1C86A800A06DF2 /* MainViewController.swift */,
+				964CB3931C1CA26900E295DC /* StrainModel.swift */,
 			);
 			path = AnswerBall;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96258AE91C1C85D200A06DF2 /* AppDelegate.swift in Sources */,
+				964CB3941C1CA26900E295DC /* StrainModel.swift in Sources */,
 				96258B171C1C86A800A06DF2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +492,7 @@
 				96258B0F1C1C85D200A06DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96258B101C1C85D200A06DF2 /* Build configuration list for PBXNativeTarget "AnswerBallTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				96258B121C1C85D200A06DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96258B131C1C85D200A06DF2 /* Build configuration list for PBXNativeTarget "AnswerBallUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				96258B151C1C85D200A06DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
